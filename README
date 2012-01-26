@@ -1,0 +1,29 @@
+Bienvenue sur le wiki du projet MultiCallLN part-1.
+
+    New Page
+    Edit Page
+    Page History
+
+Présentation du projet MultiCallLN
+Le projet consiste au développement à étendre/patcher Lightning (extension de Thunderbird) pour:
+
+    Avoir la possibilité de mettre plusieurs rappels pour un événement,
+    que les rappels d'événements puissent déclencher une musique,
+    que les rappels d'événements puissent envoyer un mail,
+    que les rappels d'événements puissent ouvrir un fichier arbitraire,
+    que les rappels d'événements puissent lancer un script.
+
+Le projet est divisé en deux parties. La première partie (MultiCallLN part-1) consistant principalement à la possibilité de mettre plusieurs rappels pour un évènement, sera sous ma direction. Et la deuxième partie consistant à associer à un évènement une action (musique, mail, etc), sera sous la direction de Anto.
+Projet MultiCall part-1
+Le projet consiste au développement d'un patch pour lightning (extension de thunderbird) qui modifiera l'interface graphique pour:
+
+    Facilité l'accès à la fonction d'ajout de plusieurs alarmes sur un même évènement,
+    et d'autre jugée utile par la communauté mozilla calendar.
+
+Plan de développement
+
+    V0.1: développement de la modification de l'interface graphique pour facilité l'accès à la fonction d'ajout de plusieurs alarmes sur un même évènement,
+    V0.2: récupération des suggestions de modification graphique à apporter sur lightning, par la communauté mozilla calendar,
+    V0.3: sélection des suggestions,
+    V0.4: développement des suggestions retenues.
+
