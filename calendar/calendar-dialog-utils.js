@@ -492,6 +492,15 @@ function editReminder() {
         args);
 }
 
+function updateReminderLoic() {
+	document.getElementById("item-alarm").selectedIndex = 15;
+	updateReminder();
+	document.getElementById("reminder-multiple-alarms-label").hidden = true;
+}
+
+
+
+
 /**
  * Update the reminder details from the selected alarm. This shows a string
  * describing the reminder set, or nothing in case a preselected reminder was

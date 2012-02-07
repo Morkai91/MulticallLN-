@@ -1023,8 +1023,9 @@
                                       origin="before"
                                       relation="START"
                                       unit="days"/>
-                            <menuseparator id="reminder-custom-separator"/>
+                            <menuseparator  id="reminder-custom-separator" hidden="true"/>
                             <menuitem id="reminder-custom-menuitem"
+										hidden="true"
                                       label="&event.reminder.custom.label;"
                                       value="custom"/>
                         </menupopup>
@@ -1049,7 +1050,16 @@
                              flex="1"
                              hyperlink="true"
                              onclick="updateReminder()"/>
+						<!--  -->
+					<label id="reminder-custom-alarms-label-loic"
+                            value="Rappels multiples..."
+							hidden="false"
+                             disable-on-readonly="true"
+                             flex="1"
+                             hyperlink="true"
+                             onclick="updateReminderLoic()"/>
                     </hbox>
+					
                </hbox>
             </row>
 
