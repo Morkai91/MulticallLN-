@@ -493,12 +493,32 @@ function editReminder() {
 }
 
 function updateReminderLoic() {
-	document.getElementById("item-alarm").selectedIndex = 15;
+	document.getElementById("item-alarm").selectedIndex = indexOfReminderLst("custom");
 	updateReminder();
 	document.getElementById("reminder-multiple-alarms-label").hidden = true;
 }
 
-
+/** Fait par Mike971 **/
+function indexOfReminderLst(reminderItemValue){
+	/*
+	This function finds the index of the item in the list of reminders by his value
+	*/
+	var nbIndex = 0 ;
+	var list_item = document.getElementById("item-alarm-menupopup");
+	while(list_item.childNodes.length > nbIndex){
+		if(list_item.childNodes[nbIndex].tagName == "menuitem"){
+			if(list_item.childNodes[nbIndex].value == reminderItemValue){
+				break;
+			}
+		}
+		nbIndex = nbIndex + 1;
+	}
+	
+	if(nbIndex == list_item.childNodes.length){
+		nbIndex = 0
+	}
+	return nbIndex;
+}
 
 
 /**
