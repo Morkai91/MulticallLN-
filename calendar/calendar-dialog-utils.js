@@ -495,14 +495,21 @@ function editReminder() {
 function updateReminderLoic() {
 	document.getElementById("item-alarm").selectedIndex = indexOfReminderLst("custom");
 	updateReminder();
+	if (document.getElementById("reminder-custom-alarms-label-loic").value != "Rappels multiples..."){
+		document.getElementById("reminder-custom-alarms-label-loic").value = "Rappels multiples...";
+	}
 	document.getElementById("reminder-multiple-alarms-label").hidden = true;
+	var testReminderSingle = document.getElementById("reminder-single-alarms-label").hidden;
+	if ( testReminderSingle == false) {
+		var textloic = document.getElementById("reminder-single-alarms-label").value;
+		document.getElementById("reminder-custom-alarms-label-loic").value = textloic;
+		document.getElementById("reminder-single-alarms-label").hidden = true;
+	}
 }
 
-/** Fait par Mike971 **/
+/**  This function finds the index of the item in the list of reminders by his value
+	 Fait par Mike971 **/
 function indexOfReminderLst(reminderItemValue){
-	/*
-	This function finds the index of the item in the list of reminders by his value
-	*/
 	var nbIndex = 0 ;
 	var list_item = document.getElementById("item-alarm-menupopup");
 	while(list_item.childNodes.length > nbIndex){
