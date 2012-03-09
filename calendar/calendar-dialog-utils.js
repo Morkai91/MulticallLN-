@@ -492,17 +492,19 @@ function editReminder() {
         args);
 }
 
-function updateReminderLoic() {
+/**  This function allows to put alarms for one evenement and manages the display
+	 Fait par Morkai **/
+function updateReminderMultiAlarms() {
 	document.getElementById("item-alarm").selectedIndex = indexOfReminderLst("custom");
 	updateReminder();
-	if (document.getElementById("reminder-custom-alarms-label-loic").value != "Rappels multiples..."){
-		document.getElementById("reminder-custom-alarms-label-loic").value = "Rappels multiples...";
+	if (document.getElementById("reminder-custom-alarms-label").value != "Rappels multiples..."){
+		document.getElementById("reminder-custom-alarms-label").value = "Rappels multiples...";
 	}
-	document.getElementById("reminder-multiple-alarms-label").hidden = true;
+	// management of single alarms
 	var testReminderSingle = document.getElementById("reminder-single-alarms-label").hidden;
 	if ( testReminderSingle == false) {
 		var textloic = document.getElementById("reminder-single-alarms-label").value;
-		document.getElementById("reminder-custom-alarms-label-loic").value = textloic;
+		document.getElementById("reminder-custom-alarms-label").value = textloic;
 		document.getElementById("reminder-single-alarms-label").hidden = true;
 	}
 }

@@ -1035,14 +1035,6 @@
                             class="alarm-icons-box"
                             align="center"/>
                       <!-- TODO oncommand? onkeypress? -->
-                      <label id="reminder-multiple-alarms-label"
-                             hidden="true"
-                             value="&event.reminder.multiple.label;"
-                             class="text-link"
-                             disable-on-readonly="true"
-                             flex="1"
-                             hyperlink="true"
-                             onclick="updateReminder()"/>
                       <label id="reminder-single-alarms-label"
                              hidden="true"
                              class="text-link"
@@ -1050,16 +1042,14 @@
                              flex="1"
                              hyperlink="true"
                              onclick="updateReminder()"/>
-						<!--  -->
-					<label id="reminder-custom-alarms-label-loic"
+						<label id="reminder-custom-alarms-label"
                             value="Rappels multiples..."
 							hidden="false"
                              disable-on-readonly="true"
                              flex="1"
                              hyperlink="true"
-                             onclick="updateReminderLoic()"/>
+                             onclick="updateReminderMultiAlarms()"/>
                     </hbox>
-					
                </hbox>
             </row>
 
