@@ -497,10 +497,9 @@ function editReminder() {
 function updateReminderMultiAlarms() {
 	document.getElementById("item-alarm").selectedIndex = indexOfReminderLst("custom");
 	updateReminder();
-	if (document.getElementById("reminder-custom-alarms-label").value != "Rappels multiples..."){
-		document.getElementById("reminder-custom-alarms-label").value = "Rappels multiples...";
-	}
-	// management of single alarms
+	document.getElementById("reminder-custom-alarms-label").value = "Rappels multiples...";
+	
+	// management of single alarms to the display
 	var testReminderSingle = document.getElementById("reminder-single-alarms-label").hidden;
 	if ( testReminderSingle == false) {
 		var textloic = document.getElementById("reminder-single-alarms-label").value;
