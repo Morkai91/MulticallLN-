@@ -1043,7 +1043,7 @@
                              hyperlink="true"
                              onclick="updateReminder()"/>
 						<label id="reminder-custom-alarms-label"
-                            value="Rappels multiples..."
+                            value="&event.reminder.multiple.label;"
 							hidden="false"
                              disable-on-readonly="true"
                              flex="1"
